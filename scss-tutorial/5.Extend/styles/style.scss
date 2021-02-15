@@ -1,0 +1,26 @@
+// Sử dụng @extend cho phép bạn chia sẻ một tập các thuộc tính CSS Selector này sang selector khác.
+.button-basic  {
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: .3em;
+    margin-top: 5em;
+}
+  
+.button-report  {
+    @extend .button-basic;
+    background-color: red;
+}
+
+.button-submit  {
+    @extend .button-basic;
+    background-color: green;
+    color: white;
+}
+
+nav{
+    margin-top: 1em;
+}

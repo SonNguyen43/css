@@ -1,0 +1,113 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+
+    height: 100vh;
+    width: 100%;
+    background: #3c3c3c;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes bganim {
+    from {
+        background-position: 0px;
+    }
+
+    to {
+        background-position: 80px;
+    }
+}
+
+.cube {
+    margin: auto;
+    position: relative;
+    height: 400px;
+    width: 400px;
+    transform-style: preserve-3d;
+}
+
+.cube div {
+    position: absolute;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    background-color: #000;
+    border: solid 1px #eee;
+    color: #fff;
+    font: 10px arial;
+    transition: transform 0.2s ease-in;
+}
+
+.front {
+    transform: translateZ(300px);
+}
+
+.back {
+    transform: translateZ(-100px) rotateY(180deg);
+}
+
+.right {
+    transform: rotateY(-270deg) translateX(100px);
+    transform-origin: top right;
+}
+
+.left {
+    transform: rotateY(270deg) translateX(-100px);
+    transform-origin: center left;
+}
+
+.top {
+    transform: rotateX(-270deg) translateY(-100px);
+    transform-origin: top center;
+}
+
+.bottom {
+    transform: rotateX(270deg) translateY(100px);
+    transform-origin: bottom center;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+.cube {
+    animation: rotate 20s infinite linear;
+}
+
+.wrap:hover .front {
+    transform: translateZ(400px);
+}
+
+.wrap:hover .back {
+    transform: translateZ(-200px) rotateY(180deg);
+}
+
+.wrap:hover .right {
+    transform: rotateY(-270deg) translateZ(100px) translateX(100px);
+}
+
+.wrap:hover .left {
+    transform: rotateY(270deg) translateZ(100px) translateX(-100px);
+}
+
+.wrap:hover .top {
+    transform: rotateX(-270deg) translateZ(100px) translateY(-100px);
+}
+
+.wrap:hover .bottom {
+    transform: rotateX(270deg) translateZ(100px) translateY(100px);
+}

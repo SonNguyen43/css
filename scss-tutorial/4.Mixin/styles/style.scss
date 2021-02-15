@@ -1,0 +1,38 @@
+// Mixins trong SASS cho phép bạn nhóm nhiều dòng
+// CSS lại với nhau mà bạn có thể sử dụng lại ở bất cứ đâu
+
+@mixin transform {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(90deg);
+    color: white;
+}
+
+@mixin customText {
+    font-size: 1em;
+    color: orangered;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: orangered;
+    padding: 1rem;
+    ul {
+        list-style: none;
+    }
+    li {
+        text-align: center;
+        margin: 1rem;
+        @include transform;
+    }
+}
+   
+p{
+    @include customText;
+}

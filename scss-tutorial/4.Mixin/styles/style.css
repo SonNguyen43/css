@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: orangered;
+  padding: 1rem;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar li {
+  text-align: center;
+  margin: 1rem;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(90deg);
+  color: white;
+}
+
+p {
+  font-size: 1em;
+  color: orangered;
+  font-weight: bold;
+  margin-top: 1em;
+}
+/*# sourceMappingURL=style.css.map */

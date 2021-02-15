@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Dancing Script', cursive;
+    background: #000;
+    background-size: cover;
+    transition: 1s;
+    overflow: hidden;
+}
+
+/* TEXT ANIMATION */
+h2{
+    font-size: 4em;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+}
+
+h2 span{
+    animation: animate 2s linear infinite;
+}
+
+h2 span:nth-child(1){
+    animation-delay: 0s;
+}
+h2 span:nth-child(2){
+    animation-delay: 0.4s;
+}
+h2 span:nth-child(3){
+    animation-delay: 0.8s;
+}
+h2 span:nth-child(4){
+    animation-delay: 1.2s;
+}
+h2 span:nth-child(5){
+    animation-delay: 1.6s;
+}
+
+@keyframes animate{
+    0%, 80%{
+        color: #333;
+        text-shadow: none;
+    }
+    100%{
+        color: #fff;
+        text-shadow: 0 0 10px #fff,
+                     0 0 20px #fff,
+                     0 0 40px #fff,
+                     0 0 80px #fff,
+                     0 0 120px #fff,
+                     0 0 160px #fff
+    }
+}
+
+@media only screen and (max-width: 768px){
+    h2{
+        font-size: 2.5em;
+    }
+}
+
+/* HEART EFFECT */
+p{
+    position: absolute;
+    background: url('../images/heart.png');
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    animation: animateHeart 3s linear infinite;
+}
+
+@keyframes animateHeart{
+    0%{
+        transform: translate(-50%,-50%);
+        filter: hue-rotate(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(-50%,-1000%);
+        filter: hue-rotate(720deg);
+        opacity: 0;
+    }
+}

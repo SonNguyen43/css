@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #4b4b4b;
+}
+
+nav {
+  background: #ff9f1a;
+  padding: 1em 0 1em 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: #4b4b4b;
+}
+
+p {
+  padding: 0.8em;
+  color: #ffff;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,42 @@
+$bgcolor: #e5e5e5; 
+$textcolor: #caf0f8;
+$fontsize: 20px;
+
+$dark_1: #4b4b4b;
+$dark_2: #3d3d3d;
+
+$danger_1: #dc2f02;
+$danger_2: #e85d04;
+$danger_3: #f48c06;
+
+$primary_1: #00b4d8;
+$primary_2: #48cae4;
+$primary_3: #90e0ef;
+
+$padding_1: 10px;
+$padding_2: 20px;
+$padding_3: 30px;
+
+// Variable 
+body {
+  background-color: $bgcolor;
+  color: $textcolor;
+  font-size: $fontsize;
+
+  // neting
+  h1{
+    color: $dark_1;
+  }
+  
+  p{
+    color: $dark_2;
+  }
+}
+
+
+
+div.content_1{
+  background: $primary_2;
+  color: $danger_1;
+  padding: $padding_2;
+}

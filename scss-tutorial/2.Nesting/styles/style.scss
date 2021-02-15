@@ -1,0 +1,40 @@
+$bg: #ff9f1a;
+$bg-dark: #4b4b4b;
+$text-dark: #4b4b4b;
+
+$text-white: #ffff;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: $bg-dark;
+}
+
+nav {
+  background: $bg;
+  padding:1em 0 1em 0;
+
+  // neting
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: $text-dark;
+  }
+}
+
+p{
+  padding: 0.8em;
+  color: $text-white;
+}

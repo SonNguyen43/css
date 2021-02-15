@@ -1,0 +1,24 @@
+.button-basic, .button-report, .button-submit {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #000;
+  border-radius: .3em;
+  margin-top: 5em;
+}
+
+.button-report {
+  background-color: red;
+}
+
+.button-submit {
+  background-color: green;
+  color: white;
+}
+
+nav {
+  margin-top: 1em;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="parallax1.jpg"></div>
+    </div>
+
+    <section>
+        <div class="content">
+            <h1>Parallax Scrolling</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident praesentium, rem quas dolore molestias, 
+                error illo odit voluptates cum nisi laboriosam, 
+                voluptatem labore nostrum animi molestiae mollitia in voluptas veritatis dolores! 
+                Odit itaque accusamus excepturi nihil iusto fugiat numquam iure quis doloribus, voluptas, 
+                libero rerum, asperiores voluptatum voluptatem. Accusantium eveniet, odit esse est fugiat, 
+                magnam eligendi porro perspiciatis libero maxime ea. Necessitatibus quidem sint eos! Voluptatem eligendi officiis, 
+                nobis hic culpa reprehenderit deleniti totam aperiam ea, 
+                error quaerat quidem fugit quae exercitationem odit eaque laborum similique rem assumenda illo voluptates! 
+                Voluptatibus iure perferendis, maiores nihil quo rerum ipsum suscipit sed.
+            </p>
+        </div>
+    </section>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="parallax2.jpg"></div>
+    </div>
+
+    <section>
+        <div class="content">
+            <h1>Parallax Scrolling</h1>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.parallax').parallax();
+        });
+    </script>
+</body>
+</html>

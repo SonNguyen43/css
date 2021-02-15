@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('bg.jpg');
+    background-attachment: fixed;
+    /*  thuộc tính rất thú vị cho phép bạn hiển thị một phần cụ thể thay vì hiển thị toàn bộ khu vực của thẻ đó */
+    clip-path: circle(0px at center);
+}
+
+.container{
+    position: relative;
+    margin-top: 150vh;
+    background: #fff;
+    padding: 100px;
+}
+
+.container h2{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2.title{
+    position: relative;
+    top: 350px;
+    z-index: 1;
+    font-size: 3em;
+    text-align: center;
+    width: 100%;
+}
